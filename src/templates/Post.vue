@@ -3,7 +3,7 @@
   <Layout>
     <article>
       <header>
-        <g-link class="nav__link" to="/works">&larr; see all</g-link>
+        <g-link class="nav__link" to="/work">&larr; see all</g-link>
 
         <h1 class="post-title">
           {{ $page.post.title }}
