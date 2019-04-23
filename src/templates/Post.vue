@@ -3,11 +3,13 @@
   <Layout>
     <article>
       <header>
+        <g-link class="nav__link" to="/works">&larr; see all</g-link>
+
         <h1 class="post-title">
           {{ $page.post.title }}
         </h1>
       </header>
-      <g-image quality="100" class="responsive" :src="$page.post.image" fit="contain" />
+      <g-image  quality="100" class="responsive" :src="$page.post.image" fit="contain" />
 
       <time>{{ $page.post.date }}</time>
       <p>{{ $page.post.description }}</p>
