@@ -10,7 +10,7 @@
         </h1>
       </header>
       <g-image  quality="100" class="responsive" :src="$page.post.image" fit="contain" />
-
+      <br>
       <time>{{ $page.post.date }}</time>
       <p>{{ $page.post.description }}</p>
       <div class="post-content" v-html="$page.post.content"/>
