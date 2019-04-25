@@ -44,10 +44,11 @@ export default function(Vue, {
   // Add an external Script Before Body
   head.script.push({
     src: 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.3/js/uikit.min.js',
-    body: true
+    body: false
   },
   {
     src: 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.3/js/uikit-icons.min.js',
-    body: true
+    body: false
   })
+
 }
