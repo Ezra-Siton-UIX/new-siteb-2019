@@ -1,23 +1,25 @@
 <template>
-  <header>
-    <nav class="uk-navbar-container" uk-navbar>
-        <div class="uk-navbar-left">
-            <g-link class="uk-navbar-item uk-logo" to="/">{{ $static.metaData.siteName }}</g-link>
+<header>
+  <nav class="uk-navbar-container uk-position-top uk-navbar-transparent" style="z-index:5;" uk-navbar>
+    <div class="uk-navbar-right">
+      <g-link class="uk-navbar-item uk-logo" to="/">{{ $static.metaData.siteName }}</g-link>
+    </div>
 
-            <ul class="uk-navbar-nav">
-              <li>
-                <g-link to="/work">work</g-link>
-              </li>
-              <li>
-                <g-link to="/about">about</g-link>
-              </li>
-              <li>
-                <g-link to="/contact">contact</g-link>
-              </li>
-            </ul>
-        </div>
-    </nav>
-  </header>
+    <div class="uk-navbar-center">
+      <ul class="uk-navbar-nav">
+        <li>
+          <g-link to="/work">work</g-link>
+        </li>
+        <li>
+          <g-link to="/about">about</g-link>
+        </li>
+        <li>
+          <g-link to="/contact">contact</g-link>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 </template>
 
 <static-query>
@@ -40,7 +42,6 @@ export default {
 </script>
 
 <style>
-
 .uk-navbar-container {
   transition: background-color 0.5s ease;
 }

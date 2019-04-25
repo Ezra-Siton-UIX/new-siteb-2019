@@ -1,5 +1,5 @@
 <template>
-<Layout>
+<Layout  :sidebar="true">
   <main class="uk-height-1-1 uk-cover-container uk-background-secondary">
 
   		<img data-srcset="https://picsum.photos/640/700/?image=1044 640w,

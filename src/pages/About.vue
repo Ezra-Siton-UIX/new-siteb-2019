@@ -1,5 +1,5 @@
 <template>
-<Layout>
+<Layout  :sidebar="true">
   <div class="uk-cover-container uk-light uk-flex uk-flex-middle top-wrap-height">
     <!-- TOP CONTAINER -->
     <div class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-medium-top" data-uk-parallax="y: 0,50; easing:0; opacity:0.2">

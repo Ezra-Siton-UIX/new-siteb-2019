@@ -1,5 +1,5 @@
 <template>
-<Layout>
+<Layout :sidebar="true">
   <section class="uk-section uk-section-large uk-section-secondary">
     <div class="uk-container uk-container-small uk-text-center">
       <h1>Our Works</h1>

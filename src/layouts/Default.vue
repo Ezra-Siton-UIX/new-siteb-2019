@@ -1,13 +1,34 @@
 <template>
 <div id="app">
-  <navbar />
-  <main>
-    <slot />
-  </main>
+  <navbar v-if="sidebar" />
+  <transition name="fade" appear>
+    <main>
+      <slot />
+    </main>
+  </transition>
 </div>
 </template>
 
+
+<script>
+export default {
+  props: [
+    'sidebar'
+  ]
+
+}
+</script>
+
 <style>
+.fade-enter-active {
+  transition: opacity .5s;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+
 .uk-h1,
 .uk-h2,
 .uk-h3,

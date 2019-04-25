@@ -1,6 +1,6 @@
 <!-- src/templates/Post.vue -->
 <template>
-<layout>
+<layout :sidebar="false">
 
   <div class="uk-container uk-container-small uk-padding" style="position:relative;z-index:1;">
     <ul class="uk-breadcrumb">
@@ -81,8 +81,8 @@ query queryName ($path: String!){
 }
 </page-query>
 
-<style>
-<style lang="scss">.post-title {
+<style scoped>
+.post-title {
   padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
   text-align: center;
 }
