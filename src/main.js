@@ -41,14 +41,6 @@ export default function(Vue, {
       href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700'
     }
   )
-  // Add an external Script Before Body
-  head.script.push({
-    src: 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.3/js/uikit.min.js',
-    body: false
-  },
-  {
-    src: 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.3/js/uikit-icons.min.js',
-    body: false
-  })
+
 
 }
