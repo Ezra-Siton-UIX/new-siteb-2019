@@ -1,9 +1,11 @@
 <template>
 <div>
   <navbar v-if="ordered == true" />
+  <transition name="fade" appear>
     <div>
       <slot />
     </div>
+  </transition>
   <!-- FOOTER -->
   <footerG />
   <!-- /FOOTER -->
