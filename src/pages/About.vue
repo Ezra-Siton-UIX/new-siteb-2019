@@ -39,7 +39,6 @@
   </div>
 
 
-
   <section id="content" class="uk-section uk-section-default">
     <div class="uk-container">
       <div class="uk-section uk-section-small uk-padding-remove-top">
@@ -240,28 +239,22 @@
     <div class="uk-container uk-container-small">
       <div class="uk-grid uk-child-width-1-4 uk-child-width-expand@m logos-grid" data-uk-grid data-uk-scrollspy="cls: uk-animation-scale-down; target: > div > img; delay: 100">
         <div>
-          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/logo-1.svg" data-uk-img alt="Image">
+            <g-image src="~/assets/images/logo.png"  alt="Image" />
         </div>
         <div>
-          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/logo-2.svg" data-uk-img alt="Image">
+            <g-image src="~/assets/images/logo.png"  alt="Image" />
         </div>
         <div>
-          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/logo-3.svg" data-uk-img alt="Image">
+            <g-image src="~/assets/images/logo.png"  alt="Image" />
         </div>
         <div>
-          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/logo-6.svg" data-uk-img alt="Image">
+            <g-image src="~/assets/images/logo.png"  alt="Image" />
         </div>
         <div>
-          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/logo-7.svg" data-uk-img alt="Image">
+            <g-image src="~/assets/images/logo.png"  alt="Image" />
         </div>
         <div>
-          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/logo-8.svg" data-uk-img alt="Image">
-        </div>
-        <div>
-          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/logo-4.svg" data-uk-img alt="Image">
-        </div>
-        <div>
-          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/logo-5.svg" data-uk-img alt="Image">
+            <g-image src="~/assets/images/logo.png"  alt="Image" />
         </div>
       </div>
     </div>
