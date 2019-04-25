@@ -4,8 +4,6 @@
   <main>
     <slot />
   </main>
-  <!-- FOOTER -->
-  <footerG />
   <!-- /FOOTER -->
 </div>
 </template>
