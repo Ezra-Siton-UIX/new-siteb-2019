@@ -1,6 +1,6 @@
 <!-- src/templates/Post.vue -->
 <template>
-<layout>
+<layout >
 
   <div class="uk-container uk-container-small uk-padding" style="position:relative;z-index:1;">
     <ul class="uk-breadcrumb">
