@@ -2,9 +2,8 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
-import Card from '~/components/beforeBodyScripts.vue'
-
-
+import navbar from '~/components/navbar.vue'
+import footerG from '~/components/footerG.vue'
 
 export default function(Vue, {
   router,
@@ -13,6 +12,9 @@ export default function(Vue, {
 }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+  // Set Global Component
+  Vue.component('navbar', navbar)
+  Vue.component('footerG', footerG)
 
   head.bodyAttrs = {
     metaInfo: {
@@ -31,7 +33,7 @@ export default function(Vue, {
     rel: 'stylesheet',
     href: 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css'
   })
-
+  // Add an external Script Before Body
   head.script.push({
     src: 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit.min.js',
     body: true
