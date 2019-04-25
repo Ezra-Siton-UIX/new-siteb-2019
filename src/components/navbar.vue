@@ -8,13 +8,13 @@
       <div class="uk-navbar-center uk-light">
         <ul class="uk-navbar-nav">
           <li>
-            <g-link class="nav__link" to="/work/">עבודות</g-link>
+            <g-link class="nav__link" to="/work">עבודות</g-link>
           </li>
           <li>
-            <g-link class="nav__link" to="/about/">אודות</g-link>
+            <g-link class="nav__link" to="/about">אודות</g-link>
           </li>
           <li>
-            <g-link class="nav__link" to="/contact/">צור קשר</g-link>
+            <g-link class="nav__link" to="/contact">צור קשר</g-link>
           </li>
         </ul>
       </div>
@@ -37,11 +37,6 @@ export default {
   data() {
     return {
       message: 'Try change me!'
-    }
-  },
-  methods: {
-    onClick() {
-      this.message = 'Here you go :)'
     }
   }
 }
