@@ -10,10 +10,6 @@
     </div>
   </section>
   <!--/HERO-->
-
-
-
-
   <!-- CONTENT -->
   <nav class="uk-section-muted">
     <div class="uk-container uk-padding-small">
@@ -150,8 +146,3 @@ export default {
   }
 }
 </script>
-
-
-<style>
-
-</style>

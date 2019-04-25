@@ -4,17 +4,10 @@
   <main>
     <slot />
   </main>
-  <!-- /FOOTER -->
 </div>
 </template>
 
-
 <style>
-header {
-  position: relative;
-  z-index: 300;
-}
-
 .uk-h1,
 .uk-h2,
 .uk-h3,
