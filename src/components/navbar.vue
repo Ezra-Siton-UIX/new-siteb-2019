@@ -8,13 +8,13 @@
       <div class="uk-navbar-center uk-light">
         <ul class="uk-navbar-nav">
           <li>
-            <g-link class="nav__link" to="/work">עבודות</g-link>
+            <g-link class="nav__link" to="/work">work</g-link>
           </li>
           <li>
-            <g-link class="nav__link" to="/about">אודות</g-link>
+            <g-link class="nav__link" to="/about">about</g-link>
           </li>
           <li>
-            <g-link class="nav__link" to="/contact">צור קשר</g-link>
+            <g-link class="nav__link" to="/contact">contact</g-link>
           </li>
         </ul>
       </div>
