@@ -1,6 +1,6 @@
 <!-- src/templates/Post.vue -->
 <template>
-  <Layout>
+  <Layout class="uk-container">
     <article>
       <header>
         <g-link class="nav__link" to="/work">&larr; see all</g-link>
