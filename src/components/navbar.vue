@@ -1,8 +1,8 @@
 <template>
   <header>
-    <nav class="uk-navbar-container uk-margin" uk-navbar>
+    <nav class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar-left">
-            <g-link class="uk-navbar-item uk-logo" to="/">Logo</g-link>
+            <g-link class="uk-navbar-item uk-logo" to="/">{{ $static.metaData.siteName }}</g-link>
 
             <ul class="uk-navbar-nav">
               <li>
