@@ -18,9 +18,8 @@ export default function(Vue, {
 
   head.htmlAttrs = {
     lang: 'en',
-    dir: "ltr"
+    dir: "rtl"
   }
-
   head.bodyAttrs = {
     metaInfo: {
       meta: [{
@@ -41,7 +40,6 @@ export default function(Vue, {
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700'
     }
-
   )
   // Add an external Script Before Body
   head.script.push({
