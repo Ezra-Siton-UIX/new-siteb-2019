@@ -1,6 +1,6 @@
 <template>
 <div>
-  <navbar v-if="ordered == true" />
+  <navbar />
 
       <slot />
 
@@ -11,19 +11,6 @@
 
 </div>
 </template>
-
-
-<script>
-  export default {
-    props: {
-        ordered: {
-            type: Boolean,
-            required: false,
-            default: true
-        }
-    }
-  }
-</script>
 
 
 
