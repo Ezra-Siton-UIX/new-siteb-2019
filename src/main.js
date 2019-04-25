@@ -16,6 +16,11 @@ export default function(Vue, {
   Vue.component('navbar', navbar)
   Vue.component('footerG', footerG)
 
+  head.htmlAttrs = {
+    lang: 'en',
+    dir: "rtl"
+  }
+
   head.bodyAttrs = {
     metaInfo: {
       meta: [{
@@ -23,19 +28,28 @@ export default function(Vue, {
         },
         {
           name: 'viewport',
-          content: 'width=device-width, initial-scale=1'
+          content: 'width=device-width, initial-scale=1',
         }
       ],
     },
   }
   // Add an external CSS file
   head.link.push({
-    rel: 'stylesheet',
-    href: 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css'
-  })
+      rel: 'stylesheet',
+      href: 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css'
+    }, {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700'
+    }
+
+  )
   // Add an external Script Before Body
   head.script.push({
     src: 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit.min.js',
+    body: true
+  },
+  {
+    src: 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.3/js/uikit-icons.min.js',
     body: true
   })
 

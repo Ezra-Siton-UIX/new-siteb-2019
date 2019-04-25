@@ -1,22 +1,26 @@
 <template>
-  <header class="header uk-position-top uk-navbar-transparent uk-light">
-    <nav uk-navbar>
+<div class="uk-position-top" id="top">
+  <header class="uk-navbar-transparent">
+
+<nav style="z-index:33;" class="uk-navbar-container uk-navbar-transparent " uk-navbar="dropbar: false;" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-section-primary uk-light; bottom: #scrollup-dropdown">
+
       <g-link class="uk-navbar-item uk-logo" to="/">{{ $static.metaData.siteName }}</g-link>
-      <div class="uk-navbar-left">
+      <div class="uk-navbar-center uk-light">
         <ul class="uk-navbar-nav">
           <li>
-            <g-link class="nav__link" to="/work">Work</g-link>
+            <g-link class="nav__link" to="/work">עבודות</g-link>
           </li>
           <li>
-            <g-link class="nav__link" to="/about">About</g-link>
+            <g-link class="nav__link" to="/about">אודות</g-link>
           </li>
           <li>
-            <g-link class="nav__link" to="/contact">Contact</g-link>
+            <g-link class="nav__link" to="/contact">צור קשר</g-link>
           </li>
         </ul>
       </div>
     </nav>
   </header>
+</div>
 </template>
 
 <static-query>
@@ -44,7 +48,14 @@ export default {
 </script>
 
 <style>
-a.nav__link.active--exact.active, a.nav__link.active--exact.active:hover {
-  color: #1e87f0;
+a.nav__link.active--exact.active,
+a.nav__link.active--exact.active:hover {
+  color: white;
 }
+
+.uk-navbar-container{
+  transition: background-color 0.5s ease;
+}
+
+
 </style>

@@ -1,6 +1,8 @@
 <template>
 <Layout>
 
+
+
   <main class="uk-light wrap uk-background-norepeat uk-background-cover uk-background-center-center uk-cover-container uk-background-secondary">
 		<img data-srcset="https://picsum.photos/640/700/?image=482 640w,
 		             https://picsum.photos/960/700/?image=482 960w,
@@ -18,9 +20,11 @@
 				<div class="uk-width-4-5@m uk-margin-auto animate uk-invisible">
 					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad, reiciendis maxime, facilis nam natus incidunt provident.</p>
 				</div>
+
+
 				<div class="uk-margin-medium-top animate uk-invisible" data-uk-margin data-uk-scrollspy-class="uk-animation-fade uk-invisible">
-					<a class="uk-button uk-button-default uk-button-large uk-width-2-3 uk-width-auto@s" data-uk-icon="arrow-right" title="Learn More">LEARN MORE</a>
-					<a class="uk-button uk-button-primary uk-button-large uk-width-2-3 uk-width-auto@s" data-uk-icon="check" title="Learn More">TRY IT OUT</a>
+					<g-link to="/about" class="uk-button uk-button-default uk-button-large uk-width-2-3 uk-width-auto@s" title="Learn More About Us" data-uk-tooltip>  <span  data-uk-icon="info"> </span> About Us</g-link>
+					<g-link to="/work" class="uk-button uk-button-primary uk-button-large uk-width-2-3 uk-width-auto@s" title="See our works" data-uk-tooltip> <span data-uk-icon="image"> </span> Portfolio</g-link>
 				</div>
 			</div>
 			<!-- /TEXT -->
