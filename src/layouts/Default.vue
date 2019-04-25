@@ -2,9 +2,8 @@
 <div>
   <navbar v-if="ordered == true" />
 
-    <div>
       <slot />
-    </div>
+
 
   <!-- FOOTER -->
   <footerG />
@@ -42,13 +41,6 @@ header {
   z-index: 300;
 }
 
-.fade-enter-active {
-  transition: opacity .5s;
-}
-
-.fade-enter {
-  opacity: 0;
-}
 
 .uk-h1,
 .uk-h2,
