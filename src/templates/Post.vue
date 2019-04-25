@@ -42,8 +42,6 @@
     </header>
     <!-- /INFO -->
 
-
-
     <g-link to="/work" style="cursor: zoom-out;">
       <g-image quality="100" fit="contain" src="~/assets/images/browser-top.png" />
       <g-image quality="100" :src="$page.post.image" fit="contain" />
@@ -51,7 +49,6 @@
     <div class="uk-card uk-card-body">
       <div class="post-content" v-html="$page.post.content" />
     </div>
-
   </main>
 
 </layout>
