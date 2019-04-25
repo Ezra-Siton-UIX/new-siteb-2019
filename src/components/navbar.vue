@@ -1,8 +1,8 @@
 <template>
 <div class="uk-position-top" id="top">
   <header class="uk-navbar-transparent">
-
-<nav style="z-index:33;" class="uk-navbar-container uk-navbar-transparent " uk-navbar="dropbar: false;" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-section-primary uk-light; bottom: #scrollup-dropdown">
+    <nav style="z-index:33;" class="uk-navbar-container uk-navbar-transparent " uk-navbar="dropbar: false;"
+      data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-section-primary uk-light; bottom: #scrollup-dropdown">
 
       <g-link class="uk-navbar-item uk-logo" to="/">{{ $static.metaData.siteName }}</g-link>
       <div class="uk-navbar-center uk-light">
@@ -43,14 +43,8 @@ export default {
 </script>
 
 <style>
-a.nav__link.active--exact.active,
-a.nav__link.active--exact.active:hover {
-  color: white;
-}
 
-.uk-navbar-container{
+.uk-navbar-container {
   transition: background-color 0.5s ease;
 }
-
-
 </style>
