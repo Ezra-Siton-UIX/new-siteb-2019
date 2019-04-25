@@ -1,11 +1,12 @@
 <template>
-<div>
+<div id="app">
   <navbar />
-  <slot/>
+  <main>
+    <slot />
+  </main>
   <!-- FOOTER -->
   <footerG />
   <!-- /FOOTER -->
-
 </div>
 </template>
 
@@ -15,8 +16,27 @@ header {
   position: relative;
   z-index: 300;
 }
-.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6,
-html,body, a.nav__link{
-  font-family: 'Open Sans', sans-serif!important;
+
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5,
+.uk-h6,
+.uk-heading-2xlarge,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small,
+.uk-heading-xlarge,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+body,
+a.nav__link {
+  font-family: 'Open Sans', sans-serif !important;
 }
 </style>
