@@ -1,34 +1,37 @@
 <!-- src/templates/Post.vue -->
 <template>
-  <Layout>
-    <article class="uk-container">
-      <header>
-        <g-link class="nav__link" to="/work">&larr; see all</g-link>
+<Layout>
+  <article class="uk-container">
+    <header>
+      <g-link style="position:sticky" class="uk-button uk-button-secondary" to="/work">&larr; see all</g-link>
+      <div class="uk-card uk-card-body">
 
         <h1 class="post-title">
           {{ $page.post.title }}
         </h1>
-      </header>
-      <g-image  quality="100" class="responsive" :src="$page.post.image" fit="contain" />
-      <br>
+      </div>
+    </header>
+    <g-image quality="100" class="responsive" :src="$page.post.image" fit="contain" />
+
+    <div class="uk-card uk-card-body">
       <time>{{ $page.post.date }}</time>
       <p>{{ $page.post.description }}</p>
-      <div class="post-content" v-html="$page.post.content"/>
-    </article>
-  </Layout>
+      <div class="post-content" v-html="$page.post.content" />
+    </div>
+
+  </article>
+</Layout>
 </template>
 
 <script>
 export default {
-  metaInfo () {
+  metaInfo() {
     return {
       title: this.$page.post.title,
-      meta: [
-        {
-          name: 'description',
-          content: this.$page.post.description
-        }
-      ]
+      meta: [{
+        name: 'description',
+        content: this.$page.post.description
+      }]
     }
   }
 }
@@ -47,8 +50,7 @@ query queryName ($path: String!){
 </page-query>
 
 <style>
-<style lang="scss">
-.post-title {
+<style lang="scss">.post-title {
   padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
   text-align: center;
 }

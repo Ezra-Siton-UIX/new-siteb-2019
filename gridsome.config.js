@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Swipe Studio2',
+  siteName: 'Studio',
   plugins: [{
     use: '@gridsome/source-filesystem',
     options: {
