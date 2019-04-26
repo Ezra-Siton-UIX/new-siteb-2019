@@ -14,7 +14,7 @@
           <g-link to="/about">about</g-link>
         </li>
         <li>
-          <g-link class="uk-visible@s" to="/contact">contact</g-link>
+          <g-link to="/contact">contact</g-link>
         </li>
       </ul>
     </div>
