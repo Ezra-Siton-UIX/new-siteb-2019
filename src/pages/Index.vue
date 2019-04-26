@@ -1,5 +1,5 @@
 <template>
-<Layout  :sidebar="true" :isActive="false">
+<Layout  :sidebar="true">
 
   <main class="uk-light wrap uk-background-norepeat uk-background-cover uk-background-center-center uk-cover-container uk-background-secondary">
 		<img data-srcset="https://picsum.photos/640/700/?image=482 640w,
