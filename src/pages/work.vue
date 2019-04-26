@@ -1,6 +1,6 @@
 <template>
 <Layout :sidebar="true">
-  <section class="uk-section uk-section-large uk-section-secondary">
+  <section class="uk-section uk-section-large uk-section-2">
     <div class="uk-container uk-container-small uk-text-center">
       <h1>Our Works</h1>
       <p class="uk-text-large">This is a text that describes the album, its creator and something that you want to tell that is attractive.</p>
