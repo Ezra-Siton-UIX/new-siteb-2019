@@ -1,13 +1,11 @@
 <template>
 <div id="app">
-
-  <navbar v-if="sidebar" isActive />
+  <navbar v-if="sidebar"  />
   <transition name="fade" appear>
     <div>
       <slot />
     </div>
   </transition>
-
 
   <footerG v-if="sidebar" />
 </div>
@@ -16,25 +14,14 @@
 
 <script>
 export default {
-  data() {
-    return {
-      message: 'Try change me!'
-    }
-  },
   props: [
-    'sidebar',
-    "isActive"
+    'sidebar'
   ]
 
 }
 </script>
 
 <style>
-.red {
-  background-color: red;
-}
-
-
 .fade-enter-active {
   transition: opacity .5s;
 }
@@ -43,10 +30,9 @@ export default {
   opacity: 0;
 }
 
-a.active--exact.active,
-a.active--exact.active:hover {
+a.active--exact.active, a.active--exact.active:hover{
 
-  color: #1e87f0;
+  color:#1e87f0;
 }
 
 .uk-h1,
