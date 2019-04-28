@@ -1,29 +1,36 @@
 <template>
 <Layout :sidebar="true" class="container">
   <br>
-  <section class="uk-section uk-section-large uk-section-2">
+  <section class="uk-section uk-section-large uk-section-2 uk-position-relative">
     <div class="uk-container uk-container-small uk-text-center">
       <h1>Our Works</h1>
       <p class="uk-text-large">This is a text that describes the album, its creator and something that you want to tell that is attractive.</p>
+
+      <div class="uk-position-z-index uk-text-center uk-position-bottom">
+        <a href="#main" data-uk-scroll="duration: 500" data-uk-icon="icon: arrow-down; ratio: 2" class="uk-margin-bottom"></a>
+      </div>
 
     </div>
   </section>
   <!--/HERO-->
   <!-- CONTENT -->
-  <nav class="uk-section-muted">
-    <div class="uk-container uk-padding-small">
-      <ul class="uk-breadcrumb">
-        <li>
-          <g-link to="/">Home</g-link>
-        </li>
-        <li class="uk-disabled"><a>Work</a></li>
-      </ul>
-    </div>
-  </nav>
 
 
-  <main class="uk-section uk-section-muted">
+  <main id="main" class="uk-section uk-section-muted uk-padding-remove-top">
     <div class="uk-container">
+
+      <nav class="uk-section-muted">
+        <div class="uk-container uk-padding-small">
+          <ul class="uk-breadcrumb">
+            <li>
+              <g-link to="/">Home</g-link>
+            </li>
+            <li class="uk-disabled"><a>Work</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
       <div class="uk-grid uk-grid-large uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-3@l uk-grid-match" data-uk-lightbox="toggle:a.uk-position-cover" data-uk-grid="masonry: true">
         <!-- item -->
         <ul class="uk-inline" v-for="edge in $page.posts.edges" :key="edge.node.id" style="list-style-type: none;">

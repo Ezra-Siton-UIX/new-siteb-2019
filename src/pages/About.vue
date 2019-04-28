@@ -22,31 +22,31 @@
             https://picsum.photos/960/700/?image=816 960w,
             https://picsum.photos/1200/900/?image=816 1200w,
             https://picsum.photos/2000/1000/?image=816 2000w" data-sizes="100vw" data-src="https://picsum.photos/1200/900/?image=816" alt="" data-uk-cover data-uk-img data-uk-parallax="opacity: 1,0.1; easing:0">
-               <div class="uk-overlay-primary uk-position-cover"></div>
+      <div class="uk-overlay-primary uk-position-cover"></div>
       <!-- /TOP IMAGE -->
+
+      <div class="uk-position-z-index uk-text-center uk-position-bottom">
+        <a href="#main" data-uk-scroll="duration: 500" data-uk-icon="icon: arrow-down; ratio: 2" class="uk-margin-bottom"></a>
+      </div>
+
     </div>
-
-
     <!-- /TOP -->
 
-    <nav style="position:relative;z-index:200;" class="uk-container uk-z-index">
-      <ul class="uk-breadcrumb uk-padding-small">
-        <li>
-          <g-link to="/">Home</g-link>
-        </li>
-        <li class="uk-disabled">
-          <g-link to="/About">About</g-link>
-        </li>
-      </ul>
-    </nav>
+    <section id="main" class="uk-section uk-section-default uk-padding-remove-top">
 
-    <div class="uk-position-z-index uk-text-center">
-      <a href="#content" data-uk-scroll="duration: 500" data-uk-icon="icon: arrow-down; ratio: 2"></a>
-    </div>
-    </div>
-    
-    <section id="b" class="uk-section uk-section-default">
       <div class="uk-container">
+
+        <nav style="position:relative;z-index:200;" class="uk-container uk-z-index">
+          <ul class="uk-breadcrumb uk-padding-small">
+            <li>
+              <g-link to="/">Home</g-link>
+            </li>
+            <li class="uk-disabled">
+              <g-link to="/About">About</g-link>
+            </li>
+          </ul>
+        </nav>
+
         <div class="uk-section uk-section-small uk-padding-remove-top">
           <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" data-uk-switcher="connect: .uk-switcher; animation: uk-animation-fade">
             <li><a class="uk-border-pill" href="#">גלה</a></li>
@@ -108,7 +108,7 @@
           <li>
             <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
               <div>
-                  <g-image src="~/assets/images/test-2.png" data-uk-image />
+                <g-image src="~/assets/images/test-2.png" data-uk-image />
               </div>
               <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
                 <h6 class="uk-text-primary">MAIN REASONS</h6>
