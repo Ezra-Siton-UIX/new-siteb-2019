@@ -1,7 +1,7 @@
 <template>
 <header>
-  <nav class="uk-navbar-container uk-position-top uk-navbar-trans2parent" style="z-index:5;" uk-navbar>
-    <div class="uk-navbar-right">
+  <nav class="uk-navbar-container uk-position-top uk-navbar-transparent" style="z-index:5;" uk-navbar>
+    <div class="uk-navbar-left">
       <g-link class="uk-navbar-item uk-logo" to="/">{{ $static.metaData.siteName }}</g-link>
     </div>
 
@@ -17,6 +17,13 @@
           <g-link to="/contact">contact</g-link>
         </li>
       </ul>
+    </div>
+
+
+    <div class="uk-navbar-right">
+       <div class="uk-navbar-item">
+        <button class="uk-visible@m uk-button uk-button-primary" href="#"><span data-uk-icon="receiver" ></span> 0523408910</button>
+      </div>
     </div>
 
   </nav>

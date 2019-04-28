@@ -1,13 +1,11 @@
 <template>
-<Layout :sidebar="true">
-  <br><br>
+<Layout :sidebar="true" class="container">
+  <br>
   <section class="uk-section uk-section-large uk-section-2">
     <div class="uk-container uk-container-small uk-text-center">
       <h1>Our Works</h1>
       <p class="uk-text-large">This is a text that describes the album, its creator and something that you want to tell that is attractive.</p>
-      <div data-uk-margin>
-        <a class="uk-button uk-button-primary" href="#modal-center" data-uk-toggle> CALL TO ACTION</a>
-      </div>
+
     </div>
   </section>
   <!--/HERO-->
@@ -22,46 +20,42 @@
       </ul>
     </div>
   </nav>
-  <section class="uk-section uk-section-muted">
+  <main class="uk-section uk-section-muted">
     <div class="uk-container">
-      <div class="uk-grid uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-3@l uk-grid-match" data-uk-lightbox="toggle:a.uk-position-cover" data-uk-grid>
-
+      <div class="uk-grid uk-grid-large uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-3@l uk-grid-match" data-uk-lightbox="toggle:a.uk-position-cover" data-uk-grid="masonry: true">
         <!-- item -->
-        <div class="uk-inline" v-for="edge in $page.posts.edges" :key="edge.node.id">
-          <g-link :to="edge.node.path">
-            <section class="uk-card uk-card-default uk-card-small">
-              <g-image class="uk-position-top uk-position-z-index" quality="100" fit="contain" src="~/assets/images/browser-top.png" />
-              <div class="uk-card-media-top">
-                <div class="uk-inline-clip uk-transition-toggle uk-light">
-
-                  <g-image style="padding-top:7px;" quality="100" :src="edge.node.image" fit="contain" />
-
-                  <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                    <div data-uk-margin class="uk-transition-slide-bottom-small">
-                      <span data-uk-icon="icon: plus; ratio: 1.3"></span>
+        <ul class="uk-inline" v-for="edge in $page.posts.edges" :key="edge.node.id" style="list-style-type: none;">
+          <li>
+            <g-link :to="edge.node.path">
+              <section class="uk-card uk-card-default uk-card-small">
+                <g-image class="uk-position-top uk-position-z-index" quality="100" fit="contain" src="~/assets/images/browser-top.png" />
+                <div class="uk-card-media-top">
+                  <div class="uk-inline-clip uk-transition-toggle uk-light">
+                    <g-image style="padding-top:7px;" quality="100" :src="edge.node.image" fit="contain" />
+                    <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                      <div data-uk-margin class="uk-transition-slide-bottom-small">
+                        <span data-uk-icon="icon: plus; ratio: 1.3"></span>
+                      </div>
                     </div>
                   </div>
-
                 </div>
-
-              </div>
-              <div class="uk-card-header">
-                <div class="uk-grid-small uk-flex uk-flex-middle" data-uk-grid>
-                  <div class="uk-width-expand">
-                    <h5 class="uk-margin-remove-bottom">{{ edge.node.title }}</h5>
-                    <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Taken: April 01, 2016</time></p>
+                <div class="uk-card-header">
+                  <div class="uk-grid-small uk-flex uk-flex-middle" data-uk-grid>
+                    <div class="uk-width-expand">
+                      <h4 class="uk-margin-remove-bottom">{{ edge.node.title }}</h4>
+                      <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">{{ edge.node.date }}</time></p>
+                    </div>
                   </div>
-
                 </div>
-              </div>
-            </section>
-
-          </g-link>
-        </div>
+              </section>
+            </g-link>
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
+  </main>
   <!-- /CONTENT -->
+
   <!--FOOTER-->
   <footer class="uk-section uk-section-default uk-section-small">
     <div class="uk-container">
@@ -120,7 +114,7 @@
       edges {
         node {
           title
-          date (format: "D. MMMM YYYY")
+          date (format: "MMMM YYYY")
           description
           image
           path

@@ -1,6 +1,6 @@
 <template>
 <Layout :sidebar="true">
-  <main class="uk-height-1-1 uk-cover-container uk-background-secondary">
+  <main class="uk-height-1-1 uk-cover-container ">
 
     <div id="a" class="uk-cover-container uk-light uk-flex uk-flex-middle top-wrap-height">
       <!-- TOP CONTAINER -->
@@ -32,8 +32,7 @@
     </div>
     <!-- /TOP -->
 
-
-    <div style="position:relative;z-index:200;" class="uk-container uk-z-index">
+    <nav style="position:relative;z-index:200;" class="uk-container uk-z-index">
       <ul class="uk-breadcrumb uk-padding-small">
         <li>
           <g-link to="/">Home</g-link>
@@ -42,13 +41,7 @@
           <g-link to="/About">About</g-link>
         </li>
       </ul>
-
-
-    </div>
-
-
-
-
+    </nav>
 
     <section id="b" class="uk-section uk-section-default">
       <div class="uk-container">
@@ -113,7 +106,7 @@
           <li>
             <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
               <div>
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://zzseba78.github.io/Kick-Off/img/marketing-1.svg" alt="" data-uk-img>
+                  <g-image src="~/assets/images/test-2.png" data-uk-image />
               </div>
               <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
                 <h6 class="uk-text-primary">MAIN REASONS</h6>
