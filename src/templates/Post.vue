@@ -3,7 +3,7 @@
 <layout :sidebar="false" class="container">
 
   <div class="uk-card uk-padding uk-position-sticky" style="z-index: 10;" uk-sticky="bottom: #offset; animation: uk-animation-slide-top;show-on-up: true">
-    <g-link to="/work#main" class="uk-button uk-button-primary"> <span data-uk-icon="arrow-left"></span> Back</g-link>
+    <g-link data-uk-tooltip title="Back" to="/work#main" class="uk-button uk-button-primary"> <span data-uk-icon="arrow-left"></span> Back</g-link>
   </div>
 
 
@@ -11,7 +11,7 @@
   <hgroup class="post uk-position-top">
 
     <!-- overlay -->
-    <g-link to="/work#main" title="Back" class="uk-link-reset uk-position-cover uk-position-sticky" style="z-index:1;position:fixed; cursor: zoom-out; background:#f8f8f8"></g-link>
+    <g-link data-uk-tooltip to="/work#main" title="Back" class="uk-link-reset uk-position-cover uk-position-sticky" style="z-index:1;position:fixed; cursor: zoom-out; background:#f8f8f8"></g-link>
 
     <!-- content -->
       <nav class="uk-container uk-container-small uk-section uk-section-xsmall uk-position-relative uk-position-z-index" style="z-index:15;">
