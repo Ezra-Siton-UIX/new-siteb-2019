@@ -4,7 +4,7 @@
 
     <div id="a" class="uk-cover-container uk-position-relative uk-light uk-flex uk-flex-middle top-wrap-height">
       <!-- TOP CONTAINER -->
-      <div class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-medium-top" data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
+      <div class="uk-container uk-container-large uk-flex-auto top-container uk-position-relative uk-margin-medium-top" data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
         <div class="uk-width-1-2@s" data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
           <h6 class="uk-text-primary uk-margin-small-bottom">RESEARCH</h6>
           <h1 class="uk-margin-remove-top">Innovation in your hands.</h1>
@@ -35,6 +35,8 @@
     <section id="main" class="uk-section uk-section-default uk-padding-remove-top">
 
       <div class="uk-container">
+
+
 
         <nav style="position:relative;z-index:200;" class="uk-container uk-z-index">
           <ul class="uk-breadcrumb uk-padding-small">
@@ -136,7 +138,6 @@
 
       </div>
     </section>
-
 
 
     <section id="c" class="uk-section uk-section-primary uk-section-large">
@@ -287,6 +288,16 @@ import navbar from '~/components/navbar.vue'
 export default {
   components: {
     navbar
+  },
+  metaInfo: {
+    title: 'About us2',
+    meta: [
+      { name: 'author', content: 'John Doe' }
+    ],
+    link: [
+      { rel: 'stylesheet', href: '' },
+    ]
+    // etc...
   }
 }
 </script>
@@ -301,6 +312,7 @@ query {
 
 
 <style scoped="">
+
 .top-wrap::before,
 .overlay-wrap::before {
   position: absolute;

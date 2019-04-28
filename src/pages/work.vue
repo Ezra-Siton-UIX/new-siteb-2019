@@ -14,8 +14,6 @@
   </section>
   <!--/HERO-->
   <!-- CONTENT -->
-
-
   <main id="main" class="uk-section uk-section-muted uk-padding-remove-top">
     <div class="uk-container">
 
@@ -31,7 +29,7 @@
       </nav>
 
 
-      <div class="uk-grid uk-grid-large uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-3@l uk-grid-match" data-uk-lightbox="toggle:a.uk-position-cover" data-uk-grid="masonry: true">
+      <div class="uk-grid uk-grid-medium uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-3@l uk-grid-match" data-uk-lightbox="toggle:a.uk-position-cover" data-uk-grid="masonry: true">
         <!-- item -->
         <ul class="uk-inline" v-for="edge in $page.posts.edges" :key="edge.node.id" style="list-style-type: none;">
           <li>
@@ -52,7 +50,7 @@
                   <div class="uk-grid-small uk-flex uk-flex-middle" data-uk-grid>
                     <div class="uk-width-expand">
 
-                      <button class="uk-button uk-button-text" style="font-size:22px;">{{ edge.node.title }}</button>
+                      <button class="uk-button uk-button-text" style="font-size:16px;line-height:1">{{ edge.node.title }}</button>
                       <p class="uk-text-meta uk-margin-small"><time datetime="2016-04-01T19:00">{{ edge.node.date }}</time></p>
                     </div>
                   </div>
@@ -73,6 +71,9 @@
           Created by {{ $static.metaData.siteName }}</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip><span data-uk-icon="uikit"></span></a></p>
     </div>
   </footer>
+
+
+
   <!--/FOOTER-->
   <!-- OFFCANVAS -->
   <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
@@ -117,6 +118,9 @@
 
 </Layout>
 </template>
+
+
+
 
 <page-query>
   {
