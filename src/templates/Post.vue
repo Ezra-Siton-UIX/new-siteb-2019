@@ -38,7 +38,7 @@
                 <h1 class="uk-h2 uk-margin-remove"> {{ $page.post.title }}</h1>
                 <i class="uk-text-muted uk-text-small">{{ $page.post.date }}</i>
               </div>
-              <button v-if="$page.post.website" class="uk-button uk-button-danger">
+              <button v-if="$page.post.website" class="uk-button uk-button-danger" target="_blank" href="https://webflow.com/">
                   VISIT WEBSITE <span uk-icon="link"></span>
               </button>
 
