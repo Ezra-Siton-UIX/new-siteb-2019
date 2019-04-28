@@ -2,7 +2,7 @@
 <Layout :sidebar="true">
   <main class="uk-height-1-1 uk-cover-container ">
 
-    <div id="a" class="uk-cover-container uk-light uk-flex uk-flex-middle top-wrap-height">
+    <div id="a" class="uk-cover-container uk-position-relative uk-light uk-flex uk-flex-middle top-wrap-height">
       <!-- TOP CONTAINER -->
       <div class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-medium-top" data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
         <div class="uk-width-1-2@s" data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">

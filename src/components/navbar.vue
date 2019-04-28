@@ -22,7 +22,7 @@
 
     <div class="uk-navbar-right">
        <div class="uk-navbar-item">
-        <button class="uk-visible@m uk-button uk-button-primary" href="#"><span data-uk-icon="receiver" ></span> 0523408910</button>
+        <button class="uk-visible@m uk-button uk-button-primary" href="#"><span uk-icon="receiver" ></span> 0523408910</button>
       </div>
     </div>
 
