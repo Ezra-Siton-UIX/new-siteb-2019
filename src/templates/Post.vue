@@ -2,8 +2,8 @@
 <template>
 <layout :sidebar="false" class="container">
 
-  <div class="uk-card uk-padding uk-position-sticky" style="z-index: 10;" uk-sticky="bottom: #offset; animation: uk-animation-slide-top;show-on-up: true">
-    <g-link data-uk-tooltip title="Back" to="/work#main" class="uk-button uk-button-primary"> <span data-uk-icon="arrow-left"></span> Back</g-link>
+  <div class="uk-card uk-padding uk-position-sticky" style="width:60px; z-index: 19;" uk-sticky="bottom: #offset; animation: uk-animation-slide-top;show-on-up: true">
+    <g-link data-uk-tooltip title="Back" to="/work#main" class="uk-button uk-button-primary"> <span data-uk-icon="arrow-left"></span></g-link>
   </div>
 
 
@@ -34,11 +34,12 @@
             <div class="uk-width-auto">
               <img src="https://unsplash.it/64/64/?random" alt="" class="uk-border-circle">
             </div>
-            <div class="uk-width-expand">
+            <div class="uk-width-expand ">
               <h1 class="uk-h2 uk-margin-remove"> {{ $page.post.title }}</h1>
               <i class="uk-text-muted uk-text-small">{{ $page.post.date }}</i>
             </div>
-            <div class="ba">
+
+            <div class="uk-width-auto@m uk-width-1-1@s uk-text-center uk-margin-top">
               <a v-if="$page.post.website" class="uk-button uk-button-danger" style="z-index:300;" target="_blank" href="https://webflow.com/" :title="$page.post.title">
                 VISIT WEBSITE <span uk-icon="link"></span>
               </a>
