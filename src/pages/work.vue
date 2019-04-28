@@ -35,7 +35,7 @@
         <!-- item -->
         <ul class="uk-inline" v-for="edge in $page.posts.edges" :key="edge.node.id" style="list-style-type: none;">
           <li>
-            <g-link :to="edge.node.path" class=" uk-link-reset" title="View" data-uk-tooltip>
+            <g-link :to="edge.node.path" class=" uk-link-reset" title="View Project">
               <section class="uk-card uk-card-default uk-card-small">
                 <g-image class="uk-position-top uk-position-z-index" quality="100" fit="contain" src="~/assets/images/browser-top.png" />
                 <div class="uk-card-media-top">
