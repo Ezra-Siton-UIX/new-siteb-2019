@@ -11,7 +11,7 @@
   <hgroup class="post uk-position-top">
 
     <!-- overlay -->
-    <g-link to="/work#main" title="Back" class=" uk-position-cover uk-position-sticky" style="z-index:1;position:fixed; cursor: zoom-out; background:#f8f8f8"></g-link>
+    <g-link to="/work#main" title="Back" class="uk-link-reset uk-position-cover uk-position-sticky" style="z-index:1;position:fixed; cursor: zoom-out; background:#f8f8f8"></g-link>
 
     <!-- content -->
       <nav class="uk-container uk-container-small uk-section uk-section-xsmall uk-position-relative uk-position-z-index" style="z-index:15;">
