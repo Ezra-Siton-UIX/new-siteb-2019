@@ -60,8 +60,8 @@
       </header>
 
       <!-- content -->
-      <main class="uk-container uk-container-small uk-section uk-section-xsmall ">
-        <g-link to="/work" class="uk-position-z-index uk-position-relative">
+      <main class="uk-container uk-container-small uk-section uk-section-xsmall uk-position-z-index uk-position-relative">
+        <g-link to="/work">
           <g-image quality="100" fit="contain" src="~/assets/images/browser-top.png" />
           <g-image quality="100" :src="$page.post.image" fit="contain" />
         </g-link>
