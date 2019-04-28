@@ -2,7 +2,7 @@
 <header>
   <nav class="uk-navbar-container uk-position-top uk-navbar-transparent" style="z-index:5;" uk-navbar>
     <div class="uk-navbar-left">
-      <g-link class="uk-navbar-item uk-logo" to="/">{{ $static.metaData.siteName }}</g-link>
+      <g-link data-uk-tooltip title="Back To Homepage" class="uk-navbar-item uk-logo" to="/">{{ $static.metaData.siteName }}</g-link>
     </div>
 
     <div class="uk-navbar-center">
