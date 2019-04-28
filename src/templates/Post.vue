@@ -39,7 +39,7 @@
                 <i class="uk-text-muted uk-text-small">{{ $page.post.date }}</i>
               </div>
               <button v-if="$page.post.website" class="uk-button uk-button-danger">
-                <span uk-icon="link"></span>  VISIT WEBSITE
+                  VISIT WEBSITE <span uk-icon="link"></span>
               </button>
 
             </div>
