@@ -26,10 +26,7 @@
       <!-- /TOP IMAGE -->
     </div>
 
-    <div class="uk-position-bottom-center uk-position-medium uk-position-z-index uk-text-center">
-      <a href="#content" data-uk-scroll="duration: 500" data-uk-icon="icon: arrow-down; ratio: 2"></a>
-    </div>
-    </div>
+
     <!-- /TOP -->
 
     <nav style="position:relative;z-index:200;" class="uk-container uk-z-index">
@@ -43,6 +40,11 @@
       </ul>
     </nav>
 
+    <div class="uk-position-z-index uk-text-center">
+      <a href="#content" data-uk-scroll="duration: 500" data-uk-icon="icon: arrow-down; ratio: 2"></a>
+    </div>
+    </div>
+    
     <section id="b" class="uk-section uk-section-default">
       <div class="uk-container">
         <div class="uk-section uk-section-small uk-padding-remove-top">
