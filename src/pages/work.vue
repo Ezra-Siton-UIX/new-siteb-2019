@@ -19,7 +19,7 @@
   <main id="main" class="uk-section uk-section-muted uk-padding-remove-top">
     <div class="uk-container">
 
-      <nav class="uk-section-muted">
+      <nav class="uk-section-muted uk-margin-bottom">
         <div class="uk-container uk-padding-small">
           <ul class="uk-breadcrumb">
             <li>
