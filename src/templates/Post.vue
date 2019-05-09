@@ -6,7 +6,10 @@
     <g-link data-uk-tooltip title="Back" to="/work#main" class="uk-button uk-button-primary"> <span data-uk-icon="arrow-left"></span></g-link>
   </div>
 
+
+
   <hgroup class="post uk-position-top">
+
     <!-- overlay -->
     <g-link to="/work#main" title="Back" class="uk-link-reset uk-position-cover uk-position-sticky" style="z-index:0; position:fixed; cursor: zoom-out; background:#f8f8f8"></g-link>
 
@@ -25,11 +28,9 @@
 
     <header class="uk-container uk-container-small  uk-position-relative uk-position-z-index" style="z-index:444;">
 
-      <video width="320" height="240" controls>
-        <source :src="$page.post.video.src" :type="$page.post.video.mimeType">
-        Your browser does not support the video tag.
-      </video>
 
+<card />
+      <button  onclick="window.history.back();" >test</button>
 
       <!-- INFO -->
       <div class="uk-section uk uk-section-xsmall">
@@ -71,10 +72,6 @@
       <g-link to="/work">
         <g-image quality="100" fit="contain" src="~/assets/images/browser-top.png" />
         <g-image quality="100" :src="$page.post.image" fit="contain" />
-
-
-
-
       </g-link>
       <div class="uk-card uk-card-body">
         <div class="post-content" v-html="$page.post.content" />
@@ -108,7 +105,6 @@ query queryName ($path: String!){
     description
     content
     image
-    video
     website
   }
 }

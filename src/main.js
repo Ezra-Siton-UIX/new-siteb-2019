@@ -2,7 +2,6 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
-import navbar from '~/components/navbar.vue'
 import footerG from '~/components/footerG.vue'
 
 export default function(Vue, {
@@ -13,7 +12,6 @@ export default function(Vue, {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   // Set Global Components
-  Vue.component('navbar', navbar)
   Vue.component('footerG', footerG)
 
   head.htmlAttrs = {

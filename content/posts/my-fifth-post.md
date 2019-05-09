@@ -8,6 +8,10 @@ website: true
 tags: ['Markdown', 'Cover Image']
 ---
 
+{{ image }}
+<video width="320" height="240" controls>
+  <source src="/assets/static/content/posts/videos/video.mp4" type="video/mp4">
+</video>
 
 <img src="/assets/static/content/posts/images/home_list_view.jpg" >
 

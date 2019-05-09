@@ -1,5 +1,5 @@
 <template>
-<Layout :sidebar="true" postTitle="postTitle2222">
+<Layout :sidebar="true" >
   <!--working-->
   <main class="uk-height-1-1 uk-cover-container ">
     <div id="a" class="uk-cover-container uk-position-relative uk-light uk-flex uk-flex-middle top-wrap-height">
@@ -13,7 +13,6 @@
           <a href="#" title="Learn More" class="uk-button uk-button-primary uk-border-pill" data-uk-scrollspy-class="uk-animation-fade">LEARN MORE</a>
         </div>
       </div>
-
 
       <!-- /TOP CONTAINER -->
       <!-- TOP IMAGE -->
@@ -36,7 +35,7 @@
       <div class="uk-container">
 
 
-
+{{postTitle}}
         <nav style="position:relative;z-index:200;" class="uk-container uk-z-index">
           <ul class="uk-breadcrumb uk-padding-small">
             <li>
@@ -282,11 +281,11 @@
 </template>
 
 <script>
-import navbar from '~/components/navbar.vue'
-
 export default {
-  components: {
-    navbar
+  data: function () {
+    return {
+      postTitle: "hello world"
+    }
   },
   metaInfo: {
     title: 'About us',
@@ -310,11 +309,6 @@ query {
   }
 }
 </static-query>
-
-
-
-
-
 
 <style scoped="">
 .top-wrap::before,

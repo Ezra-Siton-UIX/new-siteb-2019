@@ -13,12 +13,16 @@
 
 
 <script>
+import navbar from '~/components/navbar.vue'
+
 export default {
   props: [
     'sidebar',
     'postTitle'
-  ]
-
+  ],
+  components: {
+    navbar
+  }
 }
 </script>
 
@@ -31,9 +35,10 @@ export default {
   opacity: 0;
 }
 
-a.active--exact.active, a.active--exact.active:hover{
+a.active--exact.active,
+a.active--exact.active:hover {
 
-  color:#1e87f0;
+  color: #1e87f0;
 }
 
 .uk-h1,
