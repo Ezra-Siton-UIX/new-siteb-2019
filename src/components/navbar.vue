@@ -1,10 +1,11 @@
 <template>
 <header>
+
+  <h3>postTitle: {{ postTitle }}</h3>
   <nav class="uk-navbar-container uk-position-top uk-navbar-transparent" style="z-index:5;" uk-navbar>
     <div class="uk-navbar-left">
       <g-link title="Back To Homepage" class="uk-navbar-item uk-logo" to="/">{{ $static.metaData.siteName }}</g-link>
     </div>
-
     <div class="uk-navbar-center">
       <ul class="uk-navbar-nav">
         <li>
@@ -18,16 +19,15 @@
         </li>
       </ul>
     </div>
-
-
     <div class="uk-navbar-right">
-       <div class="uk-navbar-item">
-        <button class="uk-visible@m uk-button uk-button-primary" href="#"><span uk-icon="receiver" ></span> 0523408910</button>
+      <div class="uk-navbar-item">
+        <button class="uk-visible@m uk-button uk-button-primary" href="#"><span uk-icon="receiver"></span> 0523408910</button>
       </div>
     </div>
-
   </nav>
 </header>
+
+
 </template>
 
 <static-query>
@@ -40,6 +40,7 @@ query {
 
 <script>
 export default {
+  props:   ['postTitle'],
   name: 'navbar',
   data() {
     return {

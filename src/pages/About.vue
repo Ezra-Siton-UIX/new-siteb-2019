@@ -1,7 +1,7 @@
 <template>
-<Layout :sidebar="true">
+<Layout :sidebar="true" postTitle="postTitle2222">
+  <!--working-->
   <main class="uk-height-1-1 uk-cover-container ">
-
     <div id="a" class="uk-cover-container uk-position-relative uk-light uk-flex uk-flex-middle top-wrap-height">
       <!-- TOP CONTAINER -->
       <div class="uk-container uk-container-large uk-flex-auto top-container uk-position-relative uk-margin-medium-top" data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
@@ -13,7 +13,6 @@
           <a href="#" title="Learn More" class="uk-button uk-button-primary uk-border-pill" data-uk-scrollspy-class="uk-animation-fade">LEARN MORE</a>
         </div>
       </div>
-
 
 
       <!-- /TOP CONTAINER -->
@@ -290,13 +289,15 @@ export default {
     navbar
   },
   metaInfo: {
-    title: 'About us2',
-    meta: [
-      { name: 'author', content: 'John Doe' }
-    ],
-    link: [
-      { rel: 'stylesheet', href: '' },
-    ]
+    title: 'About us',
+    meta: [{
+      name: 'author',
+      content: 'John Doe'
+    }],
+    link: [{
+      rel: 'stylesheet',
+      href: ''
+    }, ]
     // etc...
   }
 }
@@ -311,8 +312,11 @@ query {
 </static-query>
 
 
-<style scoped="">
 
+
+
+
+<style scoped="">
 .top-wrap::before,
 .overlay-wrap::before {
   position: absolute;

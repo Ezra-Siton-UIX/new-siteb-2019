@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-  <navbar v-if="sidebar"  />
+  <navbar />
   <transition name="fade" appear>
     <div>
       <slot />
@@ -15,7 +15,8 @@
 <script>
 export default {
   props: [
-    'sidebar'
+    'sidebar',
+    'postTitle'
   ]
 
 }
