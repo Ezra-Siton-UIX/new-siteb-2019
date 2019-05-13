@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-  <navbar />
+  <navbar v-if="sidebar" />
   <transition name="fade" appear>
     <div>
       <slot />

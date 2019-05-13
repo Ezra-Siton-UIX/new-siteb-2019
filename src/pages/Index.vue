@@ -46,6 +46,7 @@
 </div>
 
 
+<section class="uk-section">
   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
       <ul class="uk-slider-items uk-grid">
@@ -87,12 +88,16 @@
           </li>
 
       </ul>
-
+  <ul class="uk-slider-nav uk-dotnav"></ul>
       <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
       <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
+
+
   </div>
 
+
+</section>
 <br><br>
   <div uk-slideshow="animation: push">
 

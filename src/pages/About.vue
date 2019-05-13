@@ -34,8 +34,6 @@
 
       <div class="uk-container">
 
-
-{{postTitle}}
         <nav style="position:relative;z-index:200;" class="uk-container uk-z-index">
           <ul class="uk-breadcrumb uk-padding-small">
             <li>

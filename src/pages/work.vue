@@ -1,17 +1,17 @@
 <template>
 <Layout :sidebar="true" class="container">
   <br>
-  <section class="uk-section uk-section-large uk-section-2 uk-position-relative">
+  <header class="uk-section uk-position-relative">
     <div class="uk-container uk-container-small uk-text-center">
       <h1>Our Works</h1>
-      <p class="uk-text-large">This is a text that describes the album, its creator and something that you want to tell that is attractive.</p>
-
+      <p class="uk-text-large">This is a text that describes the album, its creator.</p>
+      <!-- arrow bottom -->
       <div class="uk-position-z-index uk-text-center uk-position-bottom">
         <a href="#main" data-uk-scroll="duration: 500" data-uk-icon="icon: arrow-down; ratio: 2" class="uk-margin-bottom"></a>
       </div>
 
     </div>
-  </section>
+  </header>
   <!--/HERO-->
   <!-- CONTENT -->
   <main id="main" class="uk-section uk-section-muted uk-padding-remove-top">

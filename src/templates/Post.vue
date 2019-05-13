@@ -2,16 +2,11 @@
 <template>
 <layout :sidebar="false" class="container">
 
-  <div class="uk-card uk-padding uk-position-sticky" style="width:60px; z-index: 19;" uk-sticky="bottom: #offset; animation: uk-animation-slide-top;show-on-up: true">
-    <g-link data-uk-tooltip title="Back" to="/work#main" class="uk-button uk-button-primary"> <span data-uk-icon="arrow-left"></span></g-link>
-  </div>
-
-
 
   <hgroup class="post uk-position-top">
 
     <!-- overlay -->
-    <g-link to="/work#main" title="Back" class="uk-link-reset uk-position-cover uk-position-sticky" style="z-index:0; position:fixed; cursor: zoom-out; background:#f8f8f8"></g-link>
+    <a @click="$router.go(-1)" title="Back" class="uk-link-reset uk-position-cover uk-position-sticky" style="z-index:0; position:fixed; cursor: zoom-out; background:#f8f8f8"></a>
 
     <!-- content -->
     <nav class="uk-container uk-container-small uk-section uk-section-xsmall uk-position-relative uk-position-z-index" style="z-index:15;">
@@ -29,11 +24,15 @@
     <header class="uk-container uk-container-small  uk-position-relative uk-position-z-index" style="z-index:444;">
 
 
-<card />
-      <button  onclick="window.history.back();" >test</button>
+       <a @click="$router.go(-1)">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><g class="nc-icon-wrapper" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="#333" stroke="#333"><line data-color="color-2" fill="none" stroke-miterlimit="10" x1="23" y1="12" x2="10" y2="12"/> <polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="10,7 10,17 3,12 "/></g></svg>
+        <span> Back</span>
+         </a>
+
+
 
       <!-- INFO -->
-      <div class="uk-section uk uk-section-xsmall">
+      <div class="uk-section uk-section-xsmall">
         <div class="uk-container">
           <div class="uk-grid uk-grid-small uk-flex uk-flex-middle" data-uk-grid>
             <div class="uk-width-auto">
@@ -69,10 +68,10 @@
 
     <!-- content -->
     <main class="uk-container uk-container-small uk-section uk-section-xsmall uk-position-z-index uk-position-relative">
-      <g-link to="/work">
+      <a @click="$router.go(-1)">
         <g-image quality="100" fit="contain" src="~/assets/images/browser-top.png" />
         <g-image quality="100" :src="$page.post.image" fit="contain" />
-      </g-link>
+      </a>
       <div class="uk-card uk-card-body">
         <div class="post-content" v-html="$page.post.content" />
       </div>
