@@ -60,7 +60,7 @@ query {
 
 <script>
 export default {
-  name: 'footerG',
+  name: 'footerg',
   data() {
     return {
       message: 'Try change me!'
