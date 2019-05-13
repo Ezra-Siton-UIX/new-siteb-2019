@@ -35,6 +35,7 @@
 
 
 
+
 <section class="uk-section uk-container">
 
   <div class="uk-column-1-2@s uk-column-1-3@m uk-column-1-4@l">
@@ -99,37 +100,98 @@
 
 </section>
 <br><br>
-  <div uk-slideshow="animation: push">
 
-      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-          <ul class="uk-slideshow-items">
-              <li>
-                  <img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
-              </li>
-              <li>
-                  <img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
-              </li>
-              <li>
-                  <img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
-              </li>
-              <li>
-                  <img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
-              </li>
-              <li>
-                  <img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
-              </li>
 
-          </ul>
 
-          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+<div uk-slider>
 
-      </div>
+    <div class="uk-position-relative">
 
-      <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        <div class="uk-slider-container uk-light">
+            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                <li>
+                    <img src="https://getuikit.com/docs/images/photo.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>1</h1></div>
+                </li>
+                <li>
+                    <img src="https://getuikit.com/docs/images/photo.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>2</h1></div>
+                </li>
+                <li>
+                    <img src="https://getuikit.com/docs/images/photo.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>3</h1></div>
+                </li>
+                <li>
+                    <img src="https://getuikit.com/docs/images/photo.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>1</h1></div>
+                </li>
+                <li>
+                    <img src="https://getuikit.com/docs/images/photo.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>2</h1></div>
+                </li>
+                <li>
+                    <img src="https://getuikit.com/docs/images/photo.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>3</h1></div>
+                </li>
+                <li>
+                    <img src="https://getuikit.com/docs/images/photo.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>1</h1></div>
+                </li>
+                <li>
+                    <img src="https://getuikit.com/docs/images/photo.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>2</h1></div>
+                </li>
+                <li>
+                    <img src="https://getuikit.com/docs/images/photo.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>3</h1></div>
+                </li>
+            </ul>
+        </div>
 
-  </div>
+        <div class="uk-hidden@s uk-light">
+            <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+
+        <div class="uk-visible@s">
+            <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+
+    </div>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+
+
+<div uk-slideshow="animation: push">
+
+    <div class="uk-position-relative uk-visible-toggle " tabindex="-1">
+
+        <ul class="uk-slideshow-items">
+            <li>
+              <img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
+            </li>
+            <li>
+              <img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
+            </li>
+            <li>
+              <img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+    </div>
+
+    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+
+
 
 
 </section>
@@ -163,6 +225,12 @@ export default {
 </script>
 
 <style>
+
+.color{
+  display:none;
+}
+
+
     .wrap::before {
       position: absolute;
       height: 100vh;

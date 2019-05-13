@@ -1,6 +1,7 @@
 <template>
-<Layout  :sidebar="true">
+<Layout  :sidebar="true" :footer="false">
   <main class="uk-height-1-1 uk-cover-container uk-background-secondary">
+
 
   		<img data-srcset="https://picsum.photos/640/700/?image=1044 640w,
   		             https://picsum.photos/960/700/?image=1044 960w,
@@ -14,7 +15,7 @@
 
   		<div class="uk-flex uk-flex-center uk-flex-middle uk-height-viewport uk-light uk-position-relative uk-position-z-index">
   			<div class="uk-position-bottom-center uk-position-small uk-visible@m">
-  				<span class="uk-text-small uk-text-muted">© 2019 Company Name - <a href="https://github.com/zzseba78/Kick-Off">Created by {{ $static.metaData.siteName }}</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip><span data-uk-icon="uikit"></span></a></span>
+  				<span class="uk-text-small uk-text-muted">© 2019 Company Name - <a href="https://github.com/zzseba78/Kick-Off">Created by {{ $static.metaData.siteName }}</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip><span data-uk-icon="uikit">UIKIT</span></a></span>
   			</div>
   			<div class="uk-width-medium uk-padding-small" uk-scrollspy="cls: uk-animation-fade">
   				<div class="uk-text-center uk-margin">
@@ -73,7 +74,7 @@ import navbar from '~/components/navbar.vue'
 
 export default {
   components: {
-    navbar
+    navbar,
   }
 }
 </script>

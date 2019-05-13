@@ -2,7 +2,7 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
-import footerG from '~/components/footerG.vue'
+import footerg from '~/components/footerg.vue'
 
 export default function(Vue, {
   router,
@@ -12,7 +12,7 @@ export default function(Vue, {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   // Set Global Components
-  Vue.component('footerG', footerG)
+  Vue.component('footerg', footerg)
 
   head.htmlAttrs = {
     lang: 'en',
@@ -30,6 +30,8 @@ export default function(Vue, {
       ],
     },
   }
+
+
   // Add an external CSS file
   head.link.push({
     rel: 'stylesheet',
@@ -37,7 +39,11 @@ export default function(Vue, {
   }, {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700'
-  })
+  },{
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900'
+  }
+)
   // Add an external Script Before Body
   head.script.push({
       src: 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit.min.js',

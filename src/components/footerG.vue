@@ -1,5 +1,5 @@
 <template>
-  <footer class="uk-section uk-section-secondary uk-padding-remove-bottom uk-hidden">
+  <footer class="uk-section uk-section-secondary uk-padding-remove-bottom">
     <div class="uk-container">
       <div class="uk-grid uk-grid-large" data-uk-grid>
         <div class="uk-width-1-2@m">
@@ -45,7 +45,7 @@
 
     <div class="uk-text-center uk-padding uk-padding-remove-horizontal">
       <span class="uk-text-small uk-text-muted">© 2019 Marketing Layout - <a href="https://github.com/zzseba78/Swipe-Off">Created by {{ $static.metaData.siteName }}</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank"
-          data-uk-tooltip><span data-uk-icon="uikit"></span></a></span>
+          data-uk-tooltip><span data-uk-icon="uikit">UIKIT</span></a></span>
     </div>
   </footer>
 </template>

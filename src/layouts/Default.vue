@@ -1,16 +1,15 @@
 <template>
 <div id="app">
-  <navbar v-if="sidebar" />
+  <navbar v-if="sidebar" :footer="true" />
   <transition name="fade" appear>
     <div>
       <slot />
     </div>
   </transition>
 
-  <footerG v-if="sidebar" />
+  <footerg v-if="footer" />
 </div>
 </template>
-
 
 <script>
 import navbar from '~/components/navbar.vue'
@@ -18,6 +17,7 @@ import navbar from '~/components/navbar.vue'
 export default {
   props: [
     'sidebar',
+    'footer',
     'postTitle'
   ],
   components: {
@@ -62,5 +62,8 @@ html,
 body,
 a.nav__link {
   font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Maven Pro', sans-serif !important;
+
+
 }
 </style>

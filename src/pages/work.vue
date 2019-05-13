@@ -1,9 +1,11 @@
 <template>
-<Layout :sidebar="true" class="container">
-  <br>
-  <header class="uk-section uk-position-relative">
+<Layout :sidebar="true" :footer="true" class="container">
+
+
+
+  <header class="uk-section  uk-section-secondary uk-position-relative">
     <div class="uk-container uk-container-small uk-text-center">
-      <h1>Our Works</h1>
+      <h1 class="uk-margin-top">Our Works</h1>
       <p class="uk-text-large">This is a text that describes the album, its creator.</p>
       <!-- arrow bottom -->
       <div class="uk-position-z-index uk-text-center uk-position-bottom">
@@ -11,11 +13,13 @@
       </div>
 
     </div>
+
   </header>
   <!--/HERO-->
   <!-- CONTENT -->
   <main id="main" class="uk-section uk-section-muted uk-padding-remove-top">
     <div class="uk-container">
+
 
       <nav class="uk-section-muted uk-margin-bottom">
         <div class="uk-container uk-padding-small">
@@ -24,6 +28,12 @@
               <g-link to="/">Home</g-link>
             </li>
             <li class="uk-disabled"><a>Work</a></li>
+
+
+
+
+
+
           </ul>
         </div>
       </nav>
@@ -31,6 +41,9 @@
 
       <div class="uk-grid uk-grid-medium uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-3@l uk-grid-match" data-uk-lightbox="toggle:a.uk-position-cover" data-uk-grid="masonry: true">
         <!-- item -->
+
+
+
         <ul class="uk-inline" v-for="edge in $page.posts.edges" :key="edge.node.id" style="list-style-type: none;">
           <li>
             <g-link :to="edge.node.path" class=" uk-link-reset" title="View Project">
@@ -64,13 +77,6 @@
   </main>
   <!-- /CONTENT -->
 
-  <!--FOOTER-->
-  <footer class="uk-section uk-section-default uk-section-small">
-    <div class="uk-container">
-      <p class="uk-text-small uk-text-center">Copyright 2017 - Lorem ipsum dolor sit amet. <a href="https://github.com/zzseba78/Kick-Off">
-          Created by {{ $static.metaData.siteName }}</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip><span data-uk-icon="uikit"></span></a></p>
-    </div>
-  </footer>
 
 
 
@@ -149,7 +155,12 @@ query {
 
 
 <script>
+
+
 export default {
+  components: {
+
+  },
   metaInfo: {
     title: 'Works'
   }

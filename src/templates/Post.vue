@@ -110,13 +110,13 @@ query queryName ($path: String!){
 </page-query>
 
 <style scoped>
+
 .post-title {
   padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
   text-align: center;
 }
 
 img {
-
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .11);
 }
 </style>

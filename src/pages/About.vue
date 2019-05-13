@@ -1,5 +1,5 @@
 <template>
-<Layout :sidebar="true" >
+<Layout :sidebar="true" :footer="true">
   <!--working-->
   <main class="uk-height-1-1 uk-cover-container ">
     <div id="a" class="uk-cover-container uk-position-relative uk-light uk-flex uk-flex-middle top-wrap-height">
@@ -300,6 +300,8 @@ export default {
 }
 </script>
 
+
+
 <static-query>
 query {
   metaData {
@@ -308,7 +310,14 @@ query {
 }
 </static-query>
 
-<style scoped="">
+
+<style scoped>
+
+.white{
+  display:none;
+}
+
+
 .top-wrap::before,
 .overlay-wrap::before {
   position: absolute;
