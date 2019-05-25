@@ -39,19 +39,30 @@
       </nav>
 
 
-      <div class="uk-grid uk-grid-medium uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-3@l uk-grid-match" data-uk-lightbox="toggle:a.uk-position-cover" data-uk-grid="masonry: true">
+
+      <button
+         v-bind:class="{ 'i-am-active': button_active_state }"
+         v-on:click="button_active_state = !button_active_state"
+         name="button"
+       >START
+     </button>
+
+      <button v-bind:class="{ 'i-am-active': button_active_state }" id="3">3</button>
+
+      <div class="uk-grid uk-grid-medium uk-child-width-1-2 uk-child-width-1-2@m uk-child-width-1-3@l uk-grid-match"
+
+      v-bind:class="{ 'i-am-active': button_active_state }"
+
+      data-uk-lightbox="toggle:a.uk-position-cover" data-uk-grid="masonry: true">
         <!-- item -->
-
-
-
         <ul class="uk-inline" v-for="edge in $page.posts.edges" :key="edge.node.id" style="list-style-type: none;">
           <li>
             <g-link :to="edge.node.path" class=" uk-link-reset" title="View Project">
-              <section class="uk-card uk-card-default uk-card-small">
+              <div class="uk-card uk-card-default uk-card-small">
                 <g-image class="uk-position-top uk-position-z-index" quality="100" fit="contain" src="~/assets/images/browser-top.png" />
                 <div class="uk-card-media-top">
                   <div class="uk-inline-clip uk-transition-toggle uk-light">
-                    <g-image style="padding-top:7px;" quality="100" :src="edge.node.image" fit="contain" />
+                    <g-image style="padding-top:7px;" quality="100" :src="edge.node.image" fit="contain" :alt="edge.node.title" />
                     <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                       <div data-uk-margin class="uk-transition-slide-bottom-small">
                         <span data-uk-icon="icon: plus; ratio: 1.3"></span>
@@ -59,16 +70,15 @@
                     </div>
                   </div>
                 </div>
-                <div class="uk-card-header">
+                <header class="uk-card-header">
                   <div class="uk-grid-small uk-flex uk-flex-middle" data-uk-grid>
                     <div class="uk-width-expand">
-
                       <button class="uk-button uk-button-text" style="font-size:16px;line-height:1">{{ edge.node.title }}</button>
                       <p class="uk-text-meta uk-margin-small"><time datetime="2016-04-01T19:00">{{ edge.node.date }}</time></p>
                     </div>
                   </div>
-                </div>
-              </section>
+                </header>
+              </div>
             </g-link>
           </li>
         </ul>
@@ -158,6 +168,11 @@ query {
 
 
 export default {
+  data: function () {
+    return {
+      button_active_state: false
+    }
+  },
   components: {
 
   },
@@ -170,6 +185,11 @@ export default {
 <style>
 time:hover{
   text-decoration: none;
+}
+
+.i-am-active {
+  color: orange;
+  background: red;
 }
 
 </style>

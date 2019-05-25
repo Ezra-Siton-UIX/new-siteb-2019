@@ -3,8 +3,8 @@
   <nav class="uk-navbar-container uk-position-top uk-navbar-transparent" style="z-index:5;" uk-navbar>
     <div class="uk-navbar-left white">
       <g-link title="Back To Homepage" class="uk-navbar-item uk-logo" to="/">
-        <g-image  blur="0" src="~/assets/logo.png" width="170" style="width:130px;" />
-        <span class="uk-hidden">{{ $static.metaData.siteName }}</span>
+
+        <span class="uk-hidden2">{{ $static.metaData.siteName }}</span>
       </g-link>
     </div>
     <div class="uk-navbar-center">

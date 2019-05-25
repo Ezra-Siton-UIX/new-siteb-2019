@@ -1,12 +1,24 @@
 <!-- src/templates/Post.vue -->
 <template>
-<layout :sidebar="false" class="container">
+<layout :sidebar="false" class="container" style="background: black;">
+
+
+
+         <a @click="$router.go(-1)" class="uk-padding" style="z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 64 64"><g class="nc-icon-wrapper" fill="#1e87f0"><path fill="#1e87f0" d="M32,1C14.9,1,1,14.9,1,32s13.9,31,31,31s31-13.9,31-31S49.1,1,32,1z M50,33H16.4l12.3,12.3 c0.4,0.4,0.4,1,0,1.4C28.5,46.9,28.3,47,28,47s-0.5-0.1-0.7-0.3l-14-14c-0.1-0.1-0.2-0.2-0.2-0.3c-0.1-0.2-0.1-0.5,0-0.8 c0.1-0.1,0.1-0.2,0.2-0.3l14-14c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4L16.4,31H50c0.6,0,1,0.4,1,1S50.6,33,50,33z"/></g></svg>
+
+
+          <span> Back</span>
+           </a>
+
+
 
 
   <hgroup class="post uk-position-top">
 
     <!-- overlay -->
-    <a @click="$router.go(-1)" title="Back" class="uk-link-reset uk-position-cover uk-position-sticky" style="z-index:0; position:fixed; cursor: zoom-out; background:#f8f8f8"></a>
+    <a @click="$router.go(-1)" title="Back" class="uk-link-reset uk-position-cover" style="z-index:0; position:fixed; cursor: zoom-out; background:#f8f8f8"></a>
 
     <!-- content -->
     <nav class="uk-container uk-container-small uk-section uk-section-xsmall uk-position-relative uk-position-z-index" style="z-index:15;">
@@ -21,15 +33,7 @@
       </ul>
     </nav>
 
-    <header class="uk-container uk-container-small  uk-position-relative uk-position-z-index" style="z-index:444;">
-
-
-       <a @click="$router.go(-1)">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><g class="nc-icon-wrapper" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="#333" stroke="#333"><line data-color="color-2" fill="none" stroke-miterlimit="10" x1="23" y1="12" x2="10" y2="12"/> <polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="10,7 10,17 3,12 "/></g></svg>
-        <span> Back</span>
-         </a>
-
-
+    <header class="uk-container uk-container-small  uk-position-relative uk-position-z-index" >
 
       <!-- INFO -->
       <div class="uk-section uk-section-xsmall">
@@ -67,10 +71,10 @@
     </header>
 
     <!-- content -->
-    <main class="uk-container uk-container-small uk-section uk-section-xsmall uk-position-z-index uk-position-relative">
-      <a @click="$router.go(-1)">
+    <main style="max-width:1000px;" class="uk-container uk-position-z-index uk-position-relative uk-margin-top">
+      <a @click="$router.go(-1)" style="cursor: zoom-out;">
         <g-image quality="100" fit="contain" src="~/assets/images/browser-top.png" />
-        <g-image quality="100" :src="$page.post.image" fit="contain" />
+        <g-image quality="100" :src="$page.post.image"  />
       </a>
       <div class="uk-card uk-card-body">
         <div class="post-content" v-html="$page.post.content" />

@@ -9,7 +9,7 @@
   "dependencies": {
     "@gridsome/source-filesystem": "^0.3.0",
     "@gridsome/transformer-remark": "^0.2.1",
-    "gridsome": "^0.6.0",
+    "gridsome": "^0.6.2",
     "vue-carousel": "^0.18.0"
   }
 }
