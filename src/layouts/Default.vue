@@ -1,5 +1,5 @@
 <template>
-<div id="app">
+<div id="app" data-id="wow">
   <navbar v-if="sidebar" :footer="true" />
   <transition name="fade" appear>
     <div>

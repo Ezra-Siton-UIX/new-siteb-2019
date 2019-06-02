@@ -6,7 +6,3 @@ image: "./images/bz-tech-Landing-Page-Feb19_2.jpg"
 website: false
 tags: ['Markdown', 'Cover Image']
 ---
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, u

@@ -4,13 +4,18 @@
 
 
 
-         <a @click="$router.go(-1)" class="uk-padding" style="z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
+  <a @click="$router.go(-1)" class="uk-padding" style="z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 64 64"><g class="nc-icon-wrapper" fill="#1e87f0"><path fill="#1e87f0" d="M32,1C14.9,1,1,14.9,1,32s13.9,31,31,31s31-13.9,31-31S49.1,1,32,1z M50,33H16.4l12.3,12.3 c0.4,0.4,0.4,1,0,1.4C28.5,46.9,28.3,47,28,47s-0.5-0.1-0.7-0.3l-14-14c-0.1-0.1-0.2-0.2-0.2-0.3c-0.1-0.2-0.1-0.5,0-0.8 c0.1-0.1,0.1-0.2,0.2-0.3l14-14c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4L16.4,31H50c0.6,0,1,0.4,1,1S50.6,33,50,33z"/></g></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 64 64">
+      <g class="nc-icon-wrapper" fill="#1e87f0">
+        <path fill="#1e87f0"
+          d="M32,1C14.9,1,1,14.9,1,32s13.9,31,31,31s31-13.9,31-31S49.1,1,32,1z M50,33H16.4l12.3,12.3 c0.4,0.4,0.4,1,0,1.4C28.5,46.9,28.3,47,28,47s-0.5-0.1-0.7-0.3l-14-14c-0.1-0.1-0.2-0.2-0.2-0.3c-0.1-0.2-0.1-0.5,0-0.8 c0.1-0.1,0.1-0.2,0.2-0.3l14-14c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4L16.4,31H50c0.6,0,1,0.4,1,1S50.6,33,50,33z" />
+      </g>
+    </svg>
 
 
-          <span> Back</span>
-           </a>
+    <span> Back</span>
+  </a>
 
 
 
@@ -33,7 +38,7 @@
       </ul>
     </nav>
 
-    <header class="uk-container uk-container-small  uk-position-relative uk-position-z-index" >
+    <header class="uk-container uk-container-small  uk-position-relative uk-position-z-index">
 
       <!-- INFO -->
       <div class="uk-section uk-section-xsmall">
@@ -74,10 +79,12 @@
     <main style="max-width:1000px;" class="uk-container uk-position-z-index uk-position-relative uk-margin-top">
       <a @click="$router.go(-1)" style="cursor: zoom-out;">
         <g-image quality="100" fit="contain" src="~/assets/images/browser-top.png" />
-        <g-image quality="100" :src="$page.post.image"  />
+        <g-image quality="100" :src="$page.post.image" />
       </a>
       <div class="uk-card uk-card-body">
-        <div class="post-content" v-html="$page.post.content" />
+        <a @click="$router.go(-1)" style="cursor: zoom-out;">
+          <div class="post-content" v-html="$page.post.content" />
+        </a>
       </div>
     </main>
   </hgroup>
@@ -114,7 +121,6 @@ query queryName ($path: String!){
 </page-query>
 
 <style scoped>
-
 .post-title {
   padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
   text-align: center;
@@ -122,5 +128,9 @@ query queryName ($path: String!){
 
 img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, .11);
+}
+
+p img {
+  border: 1px solid #021a40 !important;
 }
 </style>

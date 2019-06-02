@@ -6,6 +6,3 @@ image: "./images/130_Home_Restaurant_RTL.jpg"
 website: true
 tags: ['Markdown', 'Cover Image']
 ---
-
-<img src="./images/ran_pharma_New_HomePage.jpg">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
