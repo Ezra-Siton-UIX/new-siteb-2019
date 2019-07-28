@@ -39,7 +39,7 @@
       </nav>
 
 
-
+      <section style="display:none;">
       <button
          v-bind:class="{ 'i-am-active': button_active_state }"
          v-on:click="button_active_state = !button_active_state"
@@ -47,8 +47,11 @@
        >START
      </button>
 
+
       <button v-bind:class="{ 'i-am-active': button_active_state }" id="3">3</button>
 
+   </section>
+   
       <div class="uk-grid uk-grid-medium uk-child-width-1-2 uk-child-width-1-2@m uk-child-width-1-3@l uk-grid-match"
 
       v-bind:class="{ 'i-am-active': button_active_state }"

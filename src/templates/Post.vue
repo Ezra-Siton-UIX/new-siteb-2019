@@ -126,8 +126,9 @@ query queryName ($path: String!){
   text-align: center;
 }
 
-img {
+img img.shadow{
   box-shadow: 0 2px 8px rgba(0, 0, 0, .11);
+    border: 1px solid #021a40 !important;
 }
 
 p img {
